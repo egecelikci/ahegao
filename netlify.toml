@@ -3,6 +3,12 @@
   functions = "functions/"
 
 [[redirects]]
+  from = "https://ahegao.netlify.com/*"
+  to = "https://ahegao.egecelikci.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/api"
   to = "/.netlify/functions/api"
   status = 200

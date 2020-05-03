@@ -4,12 +4,12 @@ exports.handler = async function (event, context) {
   const ahegaos = JSON.parse(
     await (
       await fetch(
-        "https://raw.githubusercontent.com/egecelikci/ahegao/assets/data.json"
+        "https://assets.ahegao.egecelikci.com/data.json"
       )
     ).text()
   );
   const randomAhegao = ahegaos[Math.floor(Math.random() * ahegaos.length)];
-  const output = `https://raw.githubusercontent.com/egecelikci/ahegao/assets/images/${randomAhegao}`;
+  const output = `https://assets.ahegao.egecelikci.com/images/${randomAhegao}`;
   const image = await (await fetch(output)).buffer();
 
   try {

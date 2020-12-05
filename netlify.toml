@@ -1,6 +1,6 @@
 [build]
-  command = "#"
-  functions = "functions/"
+  command = "npm run build"
+  functions = "dist/functions"
 
 [[redirects]]
   from = "https://ahegao.netlify.com/*"

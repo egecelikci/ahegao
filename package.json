@@ -1,0 +1,30 @@
+{
+  "name": "ahegao",
+  "author": "Ege Çelikçi <egecelikci@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egecelikci/ahegao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/egecelikci/ahegai/issues"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3",
+    "prettier": "^1.19.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "start": "netlify-lambda serve src/functions --config webpack.functions.js",
+    "build": "netlify-lambda build src/functions --config webpack.functions.js",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "postinstall": "netlify-lambda install"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "engineStrict": true
+}

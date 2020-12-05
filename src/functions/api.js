@@ -12,7 +12,13 @@ exports.handler = async (event, context, callback) => {
   const output = `https://assets.ahegao.egecelikci.com/images/${randomAhegao}`;
 
   try {
-    return {
+    return event.queryStringParameters.redirect ? {
+      statusCode: 301,
+      headers: {
+        Location: output,
+        'Cache-Control': 'no-cache',
+      },
+  }:{
       statusCode: 200,
       body: JSON.stringify({ msg: output }),
       headers: { "Content-Type": "application/json" },

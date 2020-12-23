@@ -4,12 +4,12 @@ exports.handler = async function (event, context) {
   const ahegaos = JSON.parse(
     await (
       await fetch(
-        "https://assets.ahegao.egecelikci.com/data.json"
+        "https://ahegao.egecelikci.com/data.json"
       )
     ).text()
   );
   const randomAhegao = ahegaos[Math.floor(Math.random() * ahegaos.length)];
-  const output = `https://assets.ahegao.egecelikci.com/images/${randomAhegao}`;
+  const output = `https://files.catbox.moe/${randomAhegao}`;
   const image = await (await fetch(output)).buffer();
 
   try {

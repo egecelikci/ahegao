@@ -10,3 +10,9 @@ yarn.lock
 
 # Local Netlify folder
 .netlify
+
+# https://catbox.moe/c/s15odd
+images/
+
+# Python cache
+__pycache__/

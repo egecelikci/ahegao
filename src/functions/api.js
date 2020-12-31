@@ -1,13 +1,6 @@
 /* eslint-disable */
-const fetch = require("node-fetch");
 exports.handler = async (event, context, callback) => {
-  const ahegaos = JSON.parse(
-    await (
-      await fetch(
-        "https://ahegao.egecelikci.com/data.json"
-      )
-    ).text()
-  );
+  const ahegaos = require("../../data.json");
   const randomAhegao = ahegaos[Math.floor(Math.random() * ahegaos.length)];
   const output = `https://files.catbox.moe/${randomAhegao}`;
 

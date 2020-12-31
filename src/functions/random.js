@@ -1,17 +1,10 @@
 /* eslint-disable */
 const fetch = require("node-fetch");
 exports.handler = async function (event, context) {
-  const ahegaos = JSON.parse(
-    await (
-      await fetch(
-        "https://ahegao.egecelikci.com/data.json"
-      )
-    ).text()
-  );
+  const ahegaos = require("../../data.json");
   const randomAhegao = ahegaos[Math.floor(Math.random() * ahegaos.length)];
   const output = `https://files.catbox.moe/${randomAhegao}`;
   const image = await (await fetch(output)).buffer();
-
   try {
     return {
       statusCode: 200,

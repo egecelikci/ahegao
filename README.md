@@ -6,7 +6,7 @@
 - [ ] question your life choices
 - [ ] favicon would be good
 
-## Credits
+## credits
 * [AlexFlipnote](https://github.com/AlexFlipnote)
   * [CoffeeAPI](https://github.com/AlexFlipnote/CoffeeAPI), the inspiration of this project
   * [ModestaCSS](https://github.com/AlexFlipnote/ModestaCSS), CSS framework that makes the project's web page look nice

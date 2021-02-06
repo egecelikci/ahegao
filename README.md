@@ -2,6 +2,10 @@
 
 <div align="center"><sub>Built with ❤︎ & ☕ by <a href="https://github.com/egecelikci">egecelikci</a> & <a href="https://github.com/aleph09400">aleph09400</a><sup><a href="https://egecelikci.github.io/redirect/from_github_id.html#36800357">[?]</a></sup> for ahegao lovers.</sub></div>
 
+## todo
+- [ ] question your life choices
+- [ ] favicon would be good
+
 ## Credits
 * [AlexFlipnote](https://github.com/AlexFlipnote)
   * [CoffeeAPI](https://github.com/AlexFlipnote/CoffeeAPI), the inspiration of this project

@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "netlify-lambda serve src/functions --config webpack.functions.js",
-    "build": "netlify-lambda build src/functions --config webpack.functions.js",
+    "build": "node index.js > index.html && netlify-lambda build src/functions --config webpack.functions.js",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "postinstall": "netlify-lambda install"
   },

@@ -1,4 +1,6 @@
-<!--!
+const data = require('./data.json');
+
+const html = `<!--!
   heya inspector,
   source code:
 https://github.com/egecelikci/ahegao
@@ -23,6 +25,7 @@ https://github.com/egecelikci/ahegao
       <div class="center-object">
         <section class="me">
           <img draggable="false" src="ahegao.png" class="image" width="211.67" height="99">
+          <span class="undertitle">Start your day with a lovely ahegao ~<br><i>Images in API: <b>${data.length}</b></i></span>
         </section>
         <div class="buttons">
           <a href="random" class="btn animation white black-text" target="_blank">Random</a>
@@ -32,4 +35,6 @@ https://github.com/egecelikci/ahegao
       </div>
     </section>
   </body>
-</html>
+</html>`
+
+console.log(html);

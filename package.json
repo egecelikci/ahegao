@@ -7,7 +7,7 @@
     "url": "git+https://github.com/egecelikci/ahegao.git"
   },
   "bugs": {
-    "url": "https://github.com/egecelikci/ahegai/issues"
+    "url": "https://github.com/egecelikci/ahegao/issues"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"

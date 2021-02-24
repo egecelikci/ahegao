@@ -18,3 +18,6 @@ def randomize(dir, checker):
 def createJSON(dir, file):
     with open(file, 'w') as f:
         json.dump(os.listdir(dir), f)
+
+
+createJSON('images', 'data.json')

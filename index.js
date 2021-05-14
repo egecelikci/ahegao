@@ -10,7 +10,7 @@ https://github.com/egecelikci/ahegao
     <title>Ahegao</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <link href="https://rawgit.com/AlexFlipnote/ModestaCSS/master/css/modesta.css" type="text/css" rel="stylesheet">
+    <link href="modesta.css" type="text/css" rel="stylesheet">
 
     <meta name="theme-color" content="#65cafe">
     <meta content="ahegao.png" property="og:image"/>
